@@ -37,5 +37,14 @@ namespace UserControlItemsControlDataContextTest
             Items.Add(new MyUserControlVM() { AStr = $"Test {Items.Count + 1}", });
         }
 
+
+        private MyUserControlVM _testMyUserControlVM = new MyUserControlVM() { AStr = "MainWindowVM.TestMyUserControlVM", };
+        public MyUserControlVM TestMyUserControlVM
+        {
+            get
+            {
+                return _testMyUserControlVM;
+            }
+        }
     }
 }
