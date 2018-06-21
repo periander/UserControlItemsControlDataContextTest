@@ -5,12 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserControlItemsControlDataContextTest"
              mc:Ignorable="d" 
-             d:DesignHeight="20" d:DesignWidth="200">
+             d:DesignHeight="20" d:DesignWidth="200"
+             d:DataContext="{d:DesignInstance local:MyUserControlVM, IsDesignTimeCreatable=False}">
     
     <!-- Try commenting out MyUserControlVM.xaml's DataContext assignment and vice-versa, and see how it behaves in the designer and while executing. -->
-    <UserControl.DataContext>
+    <!-- <UserControl.DataContext>
         <local:MyUserControlVM />
-    </UserControl.DataContext>
+    </UserControl.DataContext> -->
     <!-- Try commenting out MyUserControlVM.xaml's DataContext assignment and vice-versa, and see how it behaves in the designer and while executing. -->
 
 
